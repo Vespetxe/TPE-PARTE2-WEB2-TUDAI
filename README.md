@@ -1,7 +1,6 @@
-Integrantes:
+Integrante:
 
 Espetxe Valentina. valentina.espetxe@gmail.com
-González Sandra. smg3117@gmail.com
 
 Tematica del TPE:
 
