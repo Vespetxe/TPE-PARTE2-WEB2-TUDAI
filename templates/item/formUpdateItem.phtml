@@ -1,0 +1,29 @@
+<form action="editItem/<?= $item->id ?>" method="POST">
+
+    <div class="row">
+
+        <label>Prenda a Editar</label>
+        <label>De que categoria es</label>
+        
+        <select required name="id_categoria" class="form-control">
+             
+            <option selected value="<?= $item->id_categoria ?>" ><?= $item->categoriaNombre ?></option>
+            <?php foreach ($categories as $category) : ?>
+                <option value="<?= $category->id ?>"><?= $category->nombre ?></option>
+            <?php endforeach ?>
+        </select>
+
+        <label>Nombre</label>
+        <input required name="nombre" type="text" class="form-control" value ="<?= $item->prendaNombre ?>"></input>
+
+        <label>Material de la prenda</label>
+        <input  required name="material" type="text"  class="form-control" value ="<?= $item->prendaMaterial?>"></input>
+        <label>Precio</label>
+        
+        <input  required name="precio" type="text"class="form-control" value ="<?= (double)$item->prendaPrecio?>" ></input>
+        <label>Disponible</label>
+        <input  required name="disponible" type="text"  class="form-control" value ="<?= $item->prendaDisponible?>" ></input>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Editar</button>
+</form>
