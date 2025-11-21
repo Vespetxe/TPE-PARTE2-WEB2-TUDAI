@@ -24,3 +24,8 @@ Id_categoria,
 Material,
 Precio,
 Disponible
+
+Users:
+id_user,
+username,
+password
