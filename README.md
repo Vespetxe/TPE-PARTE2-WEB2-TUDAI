@@ -12,15 +12,15 @@ Y una clase de prenda individual, que tendría un atributo que indica a que clas
 
 Categoria:
 
-Id
-Nombre
-Descripción
+Id,
+Nombre,
+Descripción,
 Responsable
 
 Prenda:
 
-Id
-Id_categoria
-Material
-Precio
+Id,
+Id_categoria,
+Material,
+Precio,
 Disponible
